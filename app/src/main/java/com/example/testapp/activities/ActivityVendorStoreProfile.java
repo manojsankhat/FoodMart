@@ -62,12 +62,14 @@ public class ActivityVendorStoreProfile extends AppCompatActivity {
             startActivityForResult(intentImgPicker, 13);
         });
 
+        loadFragment(fragmentStoreProfile, false);
+
+
     }
 
     @Override
     protected void onPostResume() {
         super.onPostResume();
-        loadFragment(fragmentStoreProfile, false);
 
 
     }

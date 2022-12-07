@@ -84,7 +84,7 @@ public class FragmentLogin extends Fragment {
                                         //vendor
                                         activityParent.getFoodMartApp().setFoodMartVendor(snapShotLoggedInUser.getValue(ModelVendor.class));
 
-
+                                        System.out.println("USERTEST"+ activityParent.getFoodMartApp().getFoodMartVendor().getEmail());
 
                                     };
                                     break;

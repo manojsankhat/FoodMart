@@ -19,6 +19,9 @@
         <activity android:name=".activities.ActivityVendorFoodItems"/>
         <activity android:name=".activities.ActivityVendorStoreProfile"/>
 
+        <activity android:name=".activities.ActivityLocationPicker"
+            />
+
         <activity
             android:name=".activities.ActivityAccount"
             android:exported="true">

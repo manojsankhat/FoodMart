@@ -2,6 +2,7 @@ package com.example.testapp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -34,6 +35,10 @@ public class ActivityVendorDashBoard extends AppCompatActivity implements View.O
         findViewById(R.id.CARD_FOOD_ORDERS).setOnClickListener(ActivityVendorDashBoard.this);
         findViewById(R.id.CARD_ORDERS_TRANSACTIONS).setOnClickListener(ActivityVendorDashBoard.this);
         findViewById(R.id.CARD_STORE_PROFILE).setOnClickListener(ActivityVendorDashBoard.this);
+
+
+
+        foodMartApp.getFoodMartVendor().setStallLocation(foodMartApp.getFoodMartVendor().getStallLocation()==null?" ":foodMartApp.getFoodMartVendor().getStallLocation());
 
         if(foodMartApp.getFoodMartVendor().getStallLocation()==null || foodMartApp.getFoodMartVendor().getStallImageUrl()==null){
             new CustomDialog(ActivityVendorDashBoard.this,false).setTitle("Missing Details").setMessage("Few Details Are Missing , Kindly Fill those details. Redirect To Profile ?").setImg(R.drawable.material_store_profile)
