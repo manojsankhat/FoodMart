@@ -10,8 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.testapp.R;
 import com.example.testapp.activities.ActivityVendorFoodItems;
 import com.example.testapp.adapters.viewholders.ViewHolderFoodItemVendor;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.squareup.picasso.Picasso;
 

@@ -57,6 +57,7 @@ public class CustomDialog extends Dialog {
         return this;
 
     }
+    //Good morning
 
     public CustomDialog setNegativeBtn(String negativeBtnText, Runnable runnableNegative) {
         this.negativeBtnText = negativeBtnText;
